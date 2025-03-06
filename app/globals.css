@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --black: #000000DE;
+  --main-color: #543883;
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  background: #EEE;
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  overflow-x: hidden;
+}
+
+
+.main-transition {
+  transition: var(--transition);
+}
+
+.transition-smooth {
+  transition: transform 1.2s cubic-bezier(0.3, 1, 0.3, 1),
+    opacity 1s ease-in-out,
+    letter-spacing 1s ease-in-out;
+}
+
+.text-stroke {
+  -webkit-text-stroke: .3px #FFA360;
+  color: var(--black);
+}
+
+.sec-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-color {
+  color: var(--main-color)
+}
+
+.hero-btn:hover {
+  color: var(--background);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #a79bbd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+.slick-arrow::before {
+  color: var(--main-color) !important;
+  font-size: 32px !important;
+  transition: var(--transition);
+}
+
+.slick-prev {
+  top: -42px !important;
+  right: 57px !important;
+  left: auto !important;
+}
+
+.slick-next {
+  top: -42px !important;
+  right: 20px !important;
+}
+
+.brand .slick-list {
+  padding: 10px;
+}
+
+.allCoupons .slick-arrow::before {
+  color: #FFA360 !important;
+}
+
+.allCoupons .slick-prev,
+.allCoupons .slick-next,
+.testimonials .slick-prev,
+.testimonials .slick-next {
+  bottom: 0 !important;
+  top: 102% !important;
+}
+
+.allCoupons .slick-prev,
+.allCoupons .slick-next,
+.testimonials .slick-prev,
+.testimonials .slick-next {
+  bottom: 0 !important;
+  top: 102% !important;
+}
+
+/* Adjust individual arrows */
+.allCoupons .slick-prev,
+.testimonials .slick-prev {
+  left: 50% !important;
+  /* Moves it to the left */
+  transform: translateX(-30px);
+}
+
+.allCoupons .slick-next,
+.testimonials .slick-next {
+  right: 50% !important;
+  /* Moves it to the right */
+  transform: translateX(30px);
+}
+
+/* national day sec  */
+.national-day {
+  background-image: url("/images/national-day/national-day-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.national-day .slick-arrow::before {
+  color: #49d249 !important;
+}
+
+.discount-sec .bg-img {
+  background-image: url("/images/discount.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.discount-sec .custom-bg {
+  background-image: linear-gradient(279.06deg, #262254 13.04%, rgba(84, 75, 186, .15) 209.81%);
+}
+
+@media (max-width: 992px) {
+  .sec-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .slick-prev {
+    top: -37px !important;
+  }
+
+  .slick-next {
+    top: -37px !important;
+  }
+
+  .testimonials .image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .slick-arrow::before {
+    font-size: 28px !important;
+  }
+
+  .slick-prev {
+    top: -30px !important;
+  }
+
+  .slick-next {
+    top: -30px !important;
+  }
+
+  .allCoupons .slick-prev,
+  .allCoupons .slick-next {
+    top: 107% !important;
+  }
+
+}
