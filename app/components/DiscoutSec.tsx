@@ -8,7 +8,7 @@ const DiscoutSec = () => {
     <section className="discount-sec mt-0 text-white sec-padding">
       <Container>
         <div className="rounded-4xl bg-img relative overflow-hidden">
-          <div className="p-10 custom-bg tob-0 bottom-0 h-full left-0 w-full">
+          <div className="p-5 max-lg:py-7 lg:p-10 custom-bg tob-0 bottom-0 h-full left-0 w-full">
             <div className="z-10">
               <span className="flex items-center gap-2 text-base lg:text-xl">
                 <CgMediaLive />
